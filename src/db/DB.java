@@ -3,8 +3,7 @@ package db;
 import java.sql.*;
 
 public class DB {
-
-    private static final String URL = "jdbc:mysql://localhost:3306/jdbcprojectdao";
+    private static final String URL = "jdbc:mysql://localhost:3306/coursejdbc";
     private static final String USER = "root";
     private static final String PASS = "12052475";
 

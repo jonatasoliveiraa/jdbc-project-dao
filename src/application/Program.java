@@ -1,16 +1,21 @@
 package application;
 
+import models.dao.DaoFactory;
+import models.dao.SellerDao;
 import models.entities.Department;
 import models.entities.Seller;
 
-import java.time.LocalDate;
+import java.util.Locale;
 
 public class Program {
     public static void main(String[] args) {
-
+        Locale.setDefault(Locale.US);
         Department department = new Department(1, "books");
 
-        Seller seller = new Seller(21, "Alex", "alex@gmail.com", LocalDate.now(), 3000.0, department);
+        SellerDao sellerDao = DaoFactory.createSellerDao();
+
+        Seller seller = sellerDao.findById(3);
+
         System.out.println(seller);
     }
 }
