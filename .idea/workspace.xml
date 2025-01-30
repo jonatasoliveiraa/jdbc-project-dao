@@ -131,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738258516515</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="findByDepartment implementation">
+      <option name="closed" value="true" />
+      <created>1738264917141</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738264917141</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,6 +147,7 @@
     <MESSAGE value="SellerDaoJDBC, DepartmentDaoJDBC  and DaoFactory" />
     <MESSAGE value="findById implementation" />
     <MESSAGE value="Reusing instantiation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reusing instantiation" />
+    <MESSAGE value="findByDepartment implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="findByDepartment implementation" />
   </component>
 </project>

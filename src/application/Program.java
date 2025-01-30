@@ -15,7 +15,7 @@ public class Program {
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
-        List<Seller> seller = sellerDao.findByDepartment(department);
+        List<Seller> seller = sellerDao.findAll();
 
         seller.forEach(System.out::println);
     }
