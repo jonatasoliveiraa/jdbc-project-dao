@@ -21,5 +21,6 @@ public class Program {
         Seller seller = new Seller(13, "Jones Brown", "jones@gmail.com", LocalDate.now(), 4000.0, department);
 
         sellerDao.update(seller);
+        sellerDao.deleteById(4);
     }
 }
