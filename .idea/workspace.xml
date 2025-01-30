@@ -171,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738269475778</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update insert implementation">
+      <option name="closed" value="true" />
+      <created>1738270849653</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738270849653</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -184,6 +192,7 @@
     <MESSAGE value="insert implementation" />
     <MESSAGE value="update implementation" />
     <MESSAGE value="delete implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete implementation" />
+    <MESSAGE value="update insert implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="update insert implementation" />
   </component>
 </project>
