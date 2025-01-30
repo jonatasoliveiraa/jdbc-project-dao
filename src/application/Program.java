@@ -18,9 +18,9 @@ public class Program {
 
         List<Seller> listSeller = sellerDao.findAll();
 
-        Seller seller = new Seller(13, "Jones Brown", "jones@gmail.com", LocalDate.now(), 4000.0, department);
+        Seller seller = new Seller("Jones Red", "jones@gmail.com", LocalDate.now(), 4000.0, department);
 
-        sellerDao.update(seller);
-        sellerDao.deleteById(4);
+        sellerDao.insert(seller);
+        System.out.println("New Id: " + seller.getId());
     }
 }
