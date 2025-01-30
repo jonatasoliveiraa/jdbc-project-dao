@@ -18,8 +18,8 @@ public class Program {
 
         List<Seller> listSeller = sellerDao.findAll();
 
-        Seller seller = new Seller(8, "Jones Blue", "jones@gmail.com", LocalDate.now(), 3000.0, department);
+        Seller seller = new Seller(13, "Jones Brown", "jones@gmail.com", LocalDate.now(), 4000.0, department);
 
-        sellerDao.insert(seller);
+        sellerDao.update(seller);
     }
 }

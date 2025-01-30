@@ -48,6 +48,30 @@ public class SellerDaoJDBC implements SellerDao {
 
     @Override
     public void update(Seller obj) {
+        PreparedStatement st = null;
+        ResultSet rs = null;
+        try {
+            st = conn.prepareStatement("UPDATE seller " +
+                    "SET Name = ?, Email = ?, BirthDate = ?, BaseSalary = ?, DepartmentId = ? " +
+                    "WHERE Id = ?");
+
+            LocalDate birthDate = obj.getBirthDate();
+            Date date = Date.valueOf(birthDate);
+
+            st.setString(1, obj.getName());
+            st.setString(2, obj.getEmail());
+            st.setDate(3, date);
+            st.setDouble(4, obj.getBaseSalary());
+            st.setInt(5, obj.getDepartment().getId());
+            st.setInt(6, obj.getId());
+
+            Integer rowsAffected = st.executeUpdate();
+            System.out.println("Rows affected: " + rowsAffected);
+        } catch (SQLException e) {
+            throw new RuntimeException(e.getMessage());
+        } finally {
+            DB.closeStatement(st);
+        }
 
     }
 
