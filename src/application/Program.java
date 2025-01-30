@@ -1,7 +1,7 @@
 package application;
 
-import entities.Department;
-import entities.Seller;
+import models.entities.Department;
+import models.entities.Seller;
 
 import java.time.LocalDate;
 

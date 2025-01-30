@@ -1,4 +1,4 @@
-package entities;
+package models.entities;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class Seller implements Serializable {
-    DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private static DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     private Integer id;
     private String name;
@@ -92,14 +92,14 @@ public class Seller implements Serializable {
 
     @Override
     public String toString() {
-        return "Seller{" +
-                "format=" + format +
-                ", id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", birthDate=" + birthDate.format(format) +
-                ", baseSalary=" + String.format("%.2f", baseSalary) +
-                ", department=" + department +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Seller {\n");
+        sb.append("name = " + name + ",\n");
+        sb.append("email = " + email + ",\n");
+        sb.append("birthDate = " + birthDate.format(format) + ",\n");
+        sb.append("baseSalary = " + String.format("%.2f", baseSalary) + ",\n");
+        sb.append("department = " + department);
+        sb.append("\n}");
+        return sb.toString();
     }
 }
