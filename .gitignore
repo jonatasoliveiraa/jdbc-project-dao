@@ -29,8 +29,9 @@ replay_pid*
 /.idea/workspace.xml
 
 ### IntelliJ IDEA ###
-.idea/
+.idea/**/
 out/
+!**/db/DB.java/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
