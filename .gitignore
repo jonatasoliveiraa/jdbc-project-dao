@@ -18,6 +18,7 @@
 *.zip
 *.tar.gz
 *.rar
+*.xml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -29,7 +30,7 @@ replay_pid*
 /.idea/workspace.xml
 
 ### IntelliJ IDEA ###
-.idea/**/
+.idea
 out/
 !**/db/DB.java/
 !**/src/main/**/out/
